@@ -36,7 +36,7 @@ foreach ($onlusers as $onluser) {
     $username = XDb::xMultiVariableQueryValue(
         "SELECT username FROM `user` WHERE user_id= :1 LIMIT 1", 0, $onluser);
 
-    $file_line .='<a class="links-onlusers" href="viewprofile.php?userid=' . $onluser . '">' . $username . '</a>,&nbsp;';
+    $file_line .='<a href="viewprofile.php?userid=' . $onluser . '">' . $username . '</a>,&nbsp;';
 }
 
 $file_content = $file_line;

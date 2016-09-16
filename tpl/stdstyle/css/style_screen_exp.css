@@ -16,8 +16,8 @@ div#cacheinfo       { background-color: blue;}
 div#overall         { min-width: 970px; width: 100%; overflow: hidden; }
 div#bg1             { display: none;}
 div#bg2             { display: none;}
-body                { font-size: 62.5%; margin: 0px auto; padding: 0px; background-color: #cccccc; font-family: arial, sans-serif, Tahoma, Verdana;}
-.page-container-1   { width: 970px; margin: 0px auto; padding: 0px; background-color:#ffffff; border: solid 1px rgb(100,100,100);}
+body                { font-size: 62.5%; margin: 0px auto; padding: 0px; background-color: #F6FAFF; font-family: arial, sans-serif, Tahoma, Verdana;}
+.page-container-1   { width: 970px; margin: 0px auto; padding: 0px; }
 
 /*************************************/
 /* SECTION 2 - HEADER AND NAVIGATION */
@@ -41,7 +41,7 @@ tr.highlighted > td {border-width:2px;}
 .site-name                  { width: 300px; height: 45px; top: 12px; position: absolute; z-index: 4; overflow: hidden; margin: 0px; padding-left: 80px;}
 .site-name p.title          { margin: 0px; padding: 0px; font-family: "trebuchet ms", arial, sans serif; font-weight: bold; font-size: 24px;}
 .site-name p.subtitle       { clear: both; width: 300px; margin: -6px 0px 0px 0px; padding: 0px; background-color: transparent; font-family: "trebuchet ms", arial, sans serif; font-size: 12px;}
-.site-name a                { margin: 0px; padding: 0px; text-decoration: none; color: rgb(0,0,0);}
+.site-name a                { margin: 0px; padding: 0px; text-decoration: none; color: #4b4b4b;}
 .site-name a:hover          { text-decoration: none;}
 .site-slogan-container      { text-align:right; width: 970px; top: 86px; position: absolute; z-index: 1; overflow: hidden; background-color: transparent;}
 .site-slogan                { float: right; width: auto; margin: 0px; padding: 5px; background-image: url(../../../images/darkbluetransparent.png); background-repeat: repeat; font-size: 10px; border-left:1px solid rgb(100,100,100); border-top:1px solid rgb(100,100,100); border-bottom:1px solid rgb(100,100,100);}
@@ -74,32 +74,35 @@ tr.highlighted > td {border-width:2px;}
 .nav1 ul                        { float: right; margin: 0px; padding: 0px 20px 0px 0px; border-left: solid 1px rgb(115,162,182); background-color: rgb(255,255,255); font-weight: bold;}
 .nav1 li                        { display: inline; list-style: none; margin: 0px; padding: 0px;}
 .nav1 li a                      { display: block; float: left; margin: 0px; padding: 2px 5px 2px 5px; border-right: solid 1px rgb(115,162,182); color: rgb(115,162,182); text-decoration: none; font-size: 10px;}
-.nav1 a:hover, .nav2 a.selected { color: rgb(50,50,50); text-decoration: none;}
+.nav1 a                         { color: #52769E; text-decoration: none;}
+.nav1 a:hover, .nav1 a.selected { color: #184E89; text-decoration: none;}
 
 /*----------------------------*/
 /* 2.4 - Navigation - Level 2 */
 /*----------------------------*/
 .nav2                               { clear: both; margin: 0px; padding: 0px; font-family: verdana, arial, sans serif; font-size: 1.0em;}
-.nav2 ul                            { float: left; width: 970px; margin: 0px; padding: 0px; border-top: solid 1px rgb(54,83,151); border-bottom: solid 1px rgb(54,83,151); background-color: rgb(127,162,202); font-weight: bold;}
+.nav2 ul                            { float: left; width: 970px; margin: 0px; padding: 0px; background-color: #7FA2CA; font-weight: bold; box-sizing: border-box; padding-left: 170px;}
 .nav2 li                            { display: inline; list-style: none; margin: 0px; padding: 0px;}
-.nav2 li a                          { display: block; float: left; margin: 0px 0px 0px 0px; padding: 5px 10px 5px 10px; border-right: solid 1px rgb(54,83,151); color: rgb(255,255,255); text-transform: uppercase; text-decoration: none; font-size: 100%;}
-.nav2 a:hover, .nav2 a.selected     { color: rgb(50,50,50); text-decoration: none;}
-.buffer                             { clear: both; width: 1px; height: 15px; margin: 0px; padding: 0px; background-color: rgb(255,255,255);}
+.nav2 a:hover                       { background-color: #52769E;}
+.nav2 li a                          { display: block; float: left; margin: 0px 0px 0px 0px; padding: 10px 10px 10px 10px; color: rgb(255,255,255); text-transform: uppercase; text-decoration: none; font-size: 100%;}
+.nav2 a:hover, .nav2 a.selected     { text-decoration: none;}
+.nav2 a.selected                    { background-color: #184E89;}
+.buffer                             { clear: both; width: 0px; height: 0px; margin: 0px; padding: 0px; background-color: rgb(255,255,255);}
 
 /*----------------------------*/
 /* 2.5 - Navigation - Level 3 */
 /*----------------------------*/
-.nav3                                           { overflow: hidden; clear: both; float: left; width: 160px; min-height: 500px; margin: 0px; padding: 0px; color: rgb(75,75,75); font-size: 1.0em;}
-.nav3 ul                                        { width: 160px; margin: 0px 0px 20px 0px; padding: 0px; border-bottom: solid 1px rgb(216,206,159); background-color: rgb(219,230,241);}
+.nav3                                           { overflow: hidden; clear: both; float: left; width: 160px; min-height: 500px; margin: 0px; padding: 20px 0 0 0; color: rgb(75,75,75); font-size: 1.0em;}
+.nav3 ul                                        { width: 160px; margin: 0px 0px 20px 0px; padding: 0px; }
 .nav3 li                                        { list-style: none; margin: 0px; padding: 0px;}
-.nav3 li.title                                  { margin: 0px 0px 0px 0px; padding: 3px 5px 2px 15px; background-color: rgb(156,186,214); color: rgb(255,255,255); text-transform: uppercase; font-weight: bold; font-size: 120%;}
-.nav3 li.group a                                { display: block; min-height: 1.7em; height: auto !important; height: 1.7em; line-height: 1.7em; margin: 0px; padding: 0px 7px 0px 15px; border-top: solid 1px rgb(200,200,200); border-left: solid 7px rgb(219,230,241); color: rgb(75,75,75); font-weight: bold; font-size: 120%;}
-.nav3 li.group_active a                         { border-left: solid 7px rgb(156,186,214); background-color: rgb(156,186,214);}
-.nav3 li.subgroup a                             { display: block; min-height: 1.7em; height: auto !important; height: 1.7em; line-height: 1.7em; margin: 0px; padding: 0px 7px 0px 15px; border-top: solid 1px rgb(200,200,200); border-left: solid 14px rgb(219,230,241); color: rgb(75,75,75); font-weight: normal; font-size: 120%;}
-.nav3 li.subgroup_active a                      { border-left: solid 14px rgb(156,186,214); background-color: rgb(156,186,214);}
-.nav3 li a                                      { display: block; min-height: 1.7em; height: auto !important; height: 1.7em; line-height: 1.7em; margin: 0px; padding: 0px 7px 0px 20px; border-left: solid 7px rgb(219,230,241); color: rgb(75,75,75); text-decoration: none; font-size: 120%;}
-.nav3 li a:hover, .nav3 li a.selected           { border-left: solid 7px rgb(156,186,214);  color: rgb(100,100,100); text-decoration: none;}
-.nav3 li.subgroup a:hover, .nav3 li a.selected  { border-left: solid 14px rgb(156,186,214);  color: rgb(100,100,100); text-decoration: none;}
+.nav3 li.title                                  { margin: 0px 0px 0px 0px; padding: 8px 5px 5px 15px; color: #52769E; text-transform: uppercase; font-weight: bold; font-size: 120%;}
+.nav3 li.group a                                { display: block; min-height: 1.7em; height: auto !important; height: 1.7em; line-height: 1.7em; margin: 0px; padding: 2px 7px 2px 15px; color: rgb(75,75,75); font-weight: bold; font-size: 120%;}
+.nav3 li.group_active a                         { background-color: #9CBAD6;}
+.nav3 li.subgroup a                             { display: block; min-height: 1.7em; height: auto !important; height: 1.7em; line-height: 1.7em; margin: 0px; padding: 2px 7px 2px 30px; color: rgb(75,75,75); font-weight: normal; font-size: 120%;}
+.nav3 li.subgroup_active a                      { background-color: #9CBAD6;}
+.nav3 li a                                      { display: block; min-height: 1.7em; height: auto !important; height: 1.7em; line-height: 1.7em; margin: 0px; padding: 2px 7px 2px 20px; color: rgb(75,75,75); text-decoration: none; font-size: 120%;}
+.nav3 li a:hover, .nav3 li a.selected           { text-decoration: none; background-color: #B3C9DF;}
+.nav3 li.subgroup a:hover, .nav3 li a.selected  { color: rgb(100,100,100); text-decoration: none;}
 
 /*----------------------------*/
 /* 2.5 - Navigation - Level 4 */
@@ -144,7 +147,8 @@ ul#statmenu { padding: 0px; margin: 0px;}
 /*--------------------*/
 
 /* Section */
-.section {}
+.section { background-color: #fff; padding: 10px; box-sizing: border-box; border: 1px solid #c2c2c2; border-radius: 3px; margin: 10px 0;}
+.section > p img {display:none;}
 
 /* Titles and textboxes*/
 .content-title-noshade          { margin: 0px; padding: 0px; color: rgb(88,144,168); font-weight: bold; font-size: 100%;}
@@ -218,15 +222,15 @@ ul.linklist-indent      { margin: -0.3em 0px 0.5em 0px; padding: 0px 0px 0px 10p
 /*--------------------*/
 /* 6.3 - Footer Area  height: 3.0em;*/
 /*--------------------*/
-.footer     { overflow: hidden; clear: both; width: 970px;  margin: 0px; padding: 0.5em 0px 0.5em 0px; border-top: solid 1px rgb(125,125,125); background-color: rgb(128,161,202); font-size: 1.0em;}
+.footer     { overflow: hidden; clear: both; width: 970px;  margin: 0px; padding: 0.5em 0px 0.5em 0px; border-top: solid 1px #C8C8C8; font-size: 1.0em;}
 .footer p   { margin: 0px; padding: 0px; text-align: center; line-height: 1.3em; font-size: 110%;}
 
 /*-------------------*/
 /* 6.4 - Hyperlinks  */
 /*-------------------*/
-.footer a                                                                                                                           { color: rgb(255,255,255); text-decoration: none;}
+.footer a                                                                                                                           { color: #52769E; text-decoration: none;}
 .footer a:hover                                                                                                                     { color: rgb(0,0,0); text-decoration: none;}
-.content1 a, .content2 a, .content3 a, .sidebar-txtbox-noshade a, .sidebar-txtbox-shade a                                           { color: rgb(75,75,75); text-decoration: underline;}
+.content1 a, .content2 a, .content3 a, .sidebar-txtbox-noshade a, .sidebar-txtbox-shade a                                           { color: rgb(75,75,75); text-decoration: none;}
 .content1 a:hover, .content2 a:hover, .content3 a:hover, .sidebar-txtbox-noshade a:hover, .sidebar-txtbox-shade a:hover             { color: rgb(0,0,0); text-decoration: none;}
 .content1 a:visited, .content2 a:visited, .content3 a:visited, .sidebar-txtbox-noshade a:visited, .sidebar-txtbox-shade a:visited   { color: rgb(130,75,150);}
 
@@ -494,9 +498,9 @@ input.formbuttons   { background-color:rgb(219,230,241); width:120px; border:1px
     vertical-align: top;
 }
 
-textarea.cachedesc  { width:600px; height:500px; }    /* only cache_editor */
-textarea.hint       { width:600px; }                  /* only cache_editor */
-textarea.logs       { width:600px; height:300px; }    /* only log_editor */
+textarea.cachedesc  { width:600px; height:500px; }    /* only cacheeditor */
+textarea.hint       { width:600px; height:100px; }    /* only cacheditor */
+textarea.logs       { width:600px; height:300px; }    /* only logeditor */
 .show_deleted       { text-decoration: line-through; }
 
 /* tooltip css */
@@ -634,13 +638,13 @@ div.gsc-resultsRoot, div.gsc-branding-text, img.gsc-branding-img {
 /* linki w recomendation cache sp2ong */
 a.links:link {
     font-weight:bold;
-    color: black;
+    color: #2b2b2b;
     text-decoration:none;
 }
 
 a.links:visited {
     font-weight:bold;
-    color: purple;
+    color: #2b2b2b;
     text-decoration:none;
 }
 
@@ -651,14 +655,12 @@ a.links:active {
 
 a.links:hover {
     font-weight:bold;
-    color:blue;
-    text-decoration: underline;
+    color: #52769E;
+    text-decoration: none;
 }
-
 .onlusers {
-    color: white;
+    color: #52769E;
 }
-
 
 a.links2:link {
     font-weight:bold;

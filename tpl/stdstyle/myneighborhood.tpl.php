@@ -56,7 +56,7 @@
 <!-- Text container -->
 {info}
 <div class="content2-container line-box">
-    <div class="content2-container-2col-left" id="local-caches-area">
+    <div class="section content2-container-2col-left" id="local-caches-area">
         <p class="content-title-noshade-size3"><img src="tpl/stdstyle/images/blue/cache.png" class="icon32" alt="" title="Cache" align="middle" />&nbsp;
             {{newest_caches}}
         </p>
@@ -73,14 +73,14 @@
         </div>
     </div>
     <br />
-    <div class="content2-container-2col-left" id="local-events-area">
+    <div class="section content2-container-2col-left" id="local-events-area">
         <p class="content-title-noshade-size3"><img src="tpl/stdstyle/images/blue/event.png" class="icon32" alt="" title="Event" align="middle" />&nbsp;
             {{incomming_events}}
         </p>
         {new_events}
     </div>
     <br />
-    <div class="content2-container-2col-left local-logs-area">
+    <div class="section content2-container-2col-left local-logs-area">
         <p class="content-title-noshade-size3"><img src="tpl/stdstyle/images/blue/cache.png" class="icon32" alt="" title="Event" align="middle" />&nbsp;
             {{ftf_awaiting}}
         </p>
@@ -89,7 +89,7 @@
         <br/>
     </div>
     <br />
-    <div class="content2-container-2col-left" id="local-logs-area">
+    <div class="section content2-container-2col-left" id="local-logs-area">
         <p class="content-title-noshade-size3"><img src="tpl/stdstyle/images/blue/logs.png" class="icon32" alt="" title="Event" align="middle" />&nbsp;
             {{latest_logs}}
         </p>
@@ -99,7 +99,7 @@
     </div>
     <br />
 
-        <div class="content2-container-2col-left" id="cacheTitled" style="display: {ptDisplay}; width: 100%">
+        <div class="section content2-container-2col-left" id="cacheTitled" style="display: {ptDisplay}; width: 100%">
         {Title_titledCaches}
         {titledCaches}
         {more_titledCaches}
@@ -107,7 +107,7 @@
     </div>
 
 
-    <div class="content2-container-2col-left local-logs-area">
+    <div class="section content2-container-2col-left local-logs-area">
         <p class="content-title-noshade-size3"><img src="tpl/stdstyle/images/blue/recommendation.png" class="icon32" alt="" title="Event" align="middle" />&nbsp;
             {{top_recommended}}
         </p>

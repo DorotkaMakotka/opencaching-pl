@@ -55,8 +55,8 @@ if (date('m') == 12 || date('m') == 1) {
         <meta name="author" content="{site_name}" />
         <meta http-equiv="X-UA-Compatible" content="IE=10" />
 
-<!--          <link rel="stylesheet" type="text/css" media="screen,projection" href="tpl/stdstyle/css/style_screen.css" /> -->
-         <link rel="stylesheet" type="text/css" media="screen,projection" href="tpl/stdstyle/css/style_screen_exp.css" />
+<!--         <link rel="stylesheet" type="text/css" media="screen,projection" href="tpl/stdstyle/css/style_screen.css" /> -->
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="tpl/stdstyle/css/style_screen_exp.css" />
         <link rel="stylesheet" type="text/css" media="print" href="tpl/stdstyle/css/style_print.css" />
         <!-- TODO -->
 <!--         <link rel="stylesheet" type="text/css" media="screen,projection" href="tpl/stdstyle/css/style_{season}.css" /> -->
@@ -263,17 +263,17 @@ if (date('m') == 12 || date('m') == 1) {
                     <?php
                     global $usr, $onlineusers;
                     if ($usr == true && $onlineusers == 1) {
-                        echo '<p><span>&nbsp;&nbsp;{{online_users}} (</span><span class="onlusers">';
+                        echo '<p><span class="txt-black">&nbsp;&nbsp;{{online_users}} (</span><span class="txt-white">';
                         global $dynstylepath;
                         include ($dynstylepath . "nonlusers.txt");
-                        echo '</span><span>) - {{online_users_info}}:</span>&nbsp;<br /><center>
-                            <div><span class="onlusers;" style="margin-left: 5px;margin-right: 5px;text-align: center; width: 800px;">';
+                        echo '</span><span class="txt-black">) - {{online_users_info}}:</span>&nbsp;<br /><center>
+                            <div><span class="txt-white;" style="margin-left: 5px;margin-right: 5px;text-align: center; width: 800px;">';
                         global $dynstylepath;
                         include ($dynstylepath . "onlineusers.html");
                         echo '</span></div></center></p><br />';
                     }
                     ?>
-                    <p class="onlusers">
+                    <p>
                         <a href="articles.php?page=impressum">{{impressum}}</a> |
                         <a href="articles.php?page=history">{{history}}</a> |
                         <a href="articles.php?page=contact">{{contact}}</a> |

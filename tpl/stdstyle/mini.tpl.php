@@ -13,7 +13,8 @@
         <meta name="KEYWORDS" content="geocaching, opencaching, skarby, poszukiwania, geocashing, longitude, latitude, utm, coordinates, treasure hunting, treasure, GPS, global positioning system, garmin, magellan, mapping, geo, hiking, outdoors, sport, hunt, stash, cache, geocaching, geocache, cache, treasure, hunting, satellite, navigation, tracking, bugs, travel bugs" />
         <meta name="author" content="Opencaching.pl " />
         <meta http-equiv="X-UA-Compatible" content="IE=10" />
-        <link rel="stylesheet" type="text/css" media="screen,projection" href="tpl/stdstyle/css/style_screen.css" />
+<!--         <link rel="stylesheet" type="text/css" media="screen,projection" href="tpl/stdstyle/css/style_screen.css" /> -->
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="tpl/stdstyle/css/style_screen_exp.css" />        
         <link rel="stylesheet" type="text/css" media="print" href="tpl/stdstyle/css/style_print.css" />
         <link rel="SHORTCUT ICON" href="favicon.ico" />
         <link rel="apple-touch-icon-precomposed" href="/images/oc_logo_144.png" />
